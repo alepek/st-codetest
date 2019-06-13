@@ -11,7 +11,7 @@
       min="1"
       max="300"
       name="height"
-      @keyup="emitChanges"
+      @change="emitChanges"
     >
     <label for="age">Your age</label>
     <input
@@ -19,7 +19,7 @@
       type="number"
       min="1"
       name="age"
-      @keyup="emitChanges"
+      @change="emitChanges"
     >
     <label for="type">Ski style</label>
     <select v-model="stats.style" name="type" @change="emitChanges">
