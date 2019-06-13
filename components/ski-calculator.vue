@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import SkiRenderer from './ski-renderer'
 import SkiForm from './ski-form'
 
@@ -24,7 +25,7 @@ export default {
   methods: {
     computeSkiSize(stats) {
 
-      this.$axios.post('/skicalc', stats)
+      axios.post('/skicalc', stats)
         .then((res) => {
           this.limits = res.data.limits
         })

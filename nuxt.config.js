@@ -15,10 +15,5 @@ module.exports = {
   },
   plugins: [
     '~/plugins/anime.js'
-  ],
-  modules: [
-    '@nuxtjs/axios'
-  ],
-  axios: {
-  }
+  ]
 }
