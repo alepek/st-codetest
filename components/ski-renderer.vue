@@ -45,7 +45,6 @@ export default {
         targets: animated,
         max: this.max,
         min: this.min,
-        easing: 'linear',
         round: 1,
         update: () => {
           this.animated.min = animated.min

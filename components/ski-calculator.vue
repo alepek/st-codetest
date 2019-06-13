@@ -24,7 +24,6 @@ export default {
   }),
   methods: {
     computeSkiSize(stats) {
-
       axios.post('/skicalc', stats)
         .then((res) => {
           this.limits = res.data.limits
@@ -48,6 +47,5 @@ export default {
 .right {
   width: 50%;
   padding-left: 1rem;
-  transition: all 200ms ease;
 }
 </style>

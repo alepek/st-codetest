@@ -4,7 +4,7 @@
 
 <style>
 html {
-  font-family: "Saira Semi Condensed", sans-serif, -apple-system,
+  font-family: -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: white;
