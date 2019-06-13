@@ -4,32 +4,34 @@
       <h1>Skiify</h1>
       <p><small> Enter your height and age to see recommended ski size(s)</small></p>
     </div>
-    <label for="height">Your height (cm)</label>
-    <input
-      v-model="stats.height"
-      type="number"
-      min="1"
-      max="300"
-      name="height"
-      @change="emitChanges"
-    >
-    <label for="age">Your age</label>
-    <input
-      v-model="stats.age"
-      type="number"
-      min="1"
-      name="age"
-      @change="emitChanges"
-    >
-    <label for="type">Ski style</label>
-    <select v-model="stats.style" name="type" @change="emitChanges">
-      <option value="classic">
-        Classic
-      </option>
-      <option value="freestyle">
-        Freestyle
-      </option>
-    </select>
+    <form @submit.native.prevent="emitChanges">
+      <label for="height">Your height (cm)</label>
+      <input
+        v-model="stats.height"
+        type="number"
+        min="1"
+        max="300"
+        name="height"
+        @change="emitChanges"
+      >
+      <label for="age">Your age</label>
+      <input
+        v-model="stats.age"
+        type="number"
+        min="1"
+        name="age"
+        @change="emitChanges"
+      >
+      <label for="type">Ski style</label>
+      <select v-model="stats.style" name="type" @change="emitChanges">
+        <option value="classic">
+          Classic
+        </option>
+        <option value="freestyle">
+          Freestyle
+        </option>
+      </select>
+    </form>
   </div>
 </template>
 
